@@ -9,21 +9,21 @@ import {User} from '../../models/User'
 })
 
 export class UserComponent implements OnInit{
-    user: User
+  user:User;
     constructor(){
     }
 
     ngOnInit(){
       this.user={
-        firstName:'John',
+        firstName:"John",
         lastName:'Doe',
         age:30,
-      address:{
-          street:"50 Main street",
-          city:"Boston",
-          state:"MA"
+        address:{
+          street:'50 Main st',
+          city:'Boston',
+          state:'MA'
+        }
       }
-    }
 
     }
 }
